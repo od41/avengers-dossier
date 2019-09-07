@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.main #bg-image {
+  background: top center/cover no-repeat fixed url("./img/iron-man-bg.jpg");
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  height: 100vh;
+  z-index: -10;
+  width: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.main .colour {
+  background-color: #16062A;
+  opacity: .7;
+  height: 100vh;
+  z-index: -5;
+  width: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-row-align: center;
+      align-self: center;
+  width: 40vw;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: #2A1C52;
+}
+
+.hero-names {
+  padding: 1.5em 0;
+  padding-right: 0;
+  background: #1D0838;
+}
+
+.hero-names .header {
+  padding-left: 2em;
+  margin-bottom: 1.5em;
+}
+
+.hero-names .hero {
+  padding: 1.4em 2em;
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  background: #1D1338;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-names .hero .icon > img {
+  width: 25px;
+}
+
+.hero-names .hero .meta {
+  margin-left: 15px;
+}
+
+.hero-names .active {
+  background: #2A1C52;
+}
+
+.hero-photo {
+  width: 400px;
+  height: auto;
+}
+
+.hero-photo > img {
+  width: 300px;
+  height: auto;
+}
+/*# sourceMappingURL=style.css.map */
